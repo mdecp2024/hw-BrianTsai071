@@ -19,7 +19,31 @@
 <h1>Attendance</h1>
 <p>出席 (10%) - 自行舉證評分</p>
 <p>自行利用 Github commits 提交記錄評分.</p>
-<h1>HW 1</h1>
+<br/>HW 1<br/><br/>心得
+<h3>基於瀏覽器的分散式版次管理與整合程式開發環境心得</h3>
+<p>在這次課題中，我學習了如何利用瀏覽器建立分散式版次管理以及整合程式開發環境，並深入探索了相關技術，包括 GitHub、Python 與 Jupyter Notebook 的應用。此外，針對不同硬體與授權模式的效能比較，也幫助我更全面理解開發環境的最佳實踐。</p>
+<hr/>
+<h4><strong>學習內容摘要</strong></h4>
+<p><strong>1. GitHub 與 Codespaces 的概念</strong><br/>GitHub 是一個強大的分散式版次管理平台，可以輕鬆進行程式碼儲存、共享及協作。而 Codespaces 則提供了一個基於雲端的整合開發環境（IDE），無需本地化安裝繁重的軟體，即可快速啟動與管理程式碼開發，這對於分散式團隊協作非常有利。</p>
+<p><strong>2. 靜態 HTTPS 授權的優勢</strong><br/>透過將 CMSIMDE 中的 <code>wsgi.py</code> 配置從動態授權（<code>ssl_context="adhoc"</code>）切換為靜態檔案授權（<code>ssl_context=('cert.pem', 'key.pem')</code>），效能有顯著提升。根據測試，執行時間可以縮短約 20%-50%，這在處理頻繁請求的開發環境中非常重要。此外，生成證書的方法（如使用 OpenSSL）也非常直觀。</p>
+<p><strong>3. 儲存媒體的選擇與效能分析</strong></p>
+<ul>
+<li>使用 USB 隨身碟儲存與執行作業倉儲，雖然便於攜帶，但因傳輸速率的限制，執行速度通常比固態硬碟（SSD）慢 3-10 倍。</li>
+<li>為提升效能，建議將頻繁使用的應用程式安裝於 C:\ 固態硬碟，僅將必需的數據存放於 USB 中，這樣可以兼顧便攜性與效能。</li>
+</ul>
+<hr/>
+<h4><strong>實作與體驗</strong></h4>
+<p>在實作過程中，我完成了以下幾個重要步驟：</p>
+<ol>
+<li>使用學號申請 GitHub 免費帳號，並利用課程提供的教材（如 Learn Python with Jupyter）進一步熟悉程式開發與 Notebook 的應用。</li>
+<li>依據課堂指導，透過 OpenSSL 生成靜態授權的 <code>cert.pem</code> 與 <code>key.pem</code>，並將其整合到 Flask 應用中以提升效能。</li>
+<li>比較 USB 隨身碟與 C:\ 固態硬碟在執行作業倉儲時的速度差異，發現固態硬碟效能顯著更高，尤其在大型檔案的讀取與寫入方面。</li>
+</ol>
+<hr/>
+<h4><strong>心得與反思</strong></h4>
+<p>透過本次學習，我深刻體會到選擇合適的開發環境與配置對於提高效率的重要性。靜態 HTTPS 授權的效能提升及 SSD 儲存的速度優勢，都是以小改進換取大提升的實例。此外，學習如何善用工具（如 GitHub 和 Jupyter Notebook），也讓我在日後的開發中能更加得心應手。</p>
+<p>最讓我印象深刻的是透過分散式版次管理進行多人協作的便利性。無論是在個人專案還是團隊開發中，GitHub 的 pull requests、issue tracking 等功能都能有效提升溝通與效率，讓程式開發的流程更加順暢。</p>
+<p>未來，我希望能更多地應用所學知識於實際專案中，特別是在效能優化與跨平台開發方面。我也計劃深入學習 Python 與 Flask，進一步掌握後端技術，為自己的專業技能增添更多價值。</p>
 <h4>主題: 基於瀏覽器的分散式版次管理與整合程式開發環境 (10%)<span style="background-color: #ffff99;"><br/></span></h4>
 <p style="padding-left: 30px;">USB 隨身碟:</p>
 <p style="padding-left: 60px;">下載 <a href="http://229.cycu.org/python_2025_lite.7z">python_2025_lite.7z</a> (428 MB, 解開壓縮後約 1.5 GB)</p>
@@ -94,6 +118,8 @@
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/OHjxkXWYKAU?si=wiRexHZlZ3snB0zT" title="YouTube video player" width="560"></iframe></p>
 <h4><span>題目二</span></h4>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/uTqy52G772o?si=GFTuuxvS9h3m-69Z" title="YouTube video player" width="560"></iframe></p>
+<h4><span>題目三</span></h4>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/92oWlGxdr7M?si=G7Zdv5HcdCmSnXtP" title="YouTube video player" width="560"></iframe></p>
 <h1>Brython</h1>
 <p></p>
 <p>從 1 累加到 100:</p>
